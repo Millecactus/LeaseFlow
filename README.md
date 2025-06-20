@@ -21,6 +21,20 @@ Destiné principalement aux agents immobiliers.
 - Tri des résultats
 - Interface moderne et responsive
 
+
+## Fonctionnalités
+
+- Publication et gestion d’annonces
+- Filtrage par ville, prix, surface
+- Tri des résultats
+- Interface moderne et responsive
+
+
+## Tests unitaires
+
+Des tests unitaires ont été réalisés sur le composant [ListingListComponent] afin d’assurer la fiabilité et la bonne fonctionnalité de ses principales méthodes et interactions. 
+Ces tests ont été écrits avec le framework de test Angular (Jasmine/Karma) et couvrent les cas d’usage essentiels du composant.
+
 ## Prérequis
 
 - Node.js ≥ 18.19.1 (ou ≥ 20.11.1 ou ≥ 22.0.0)
