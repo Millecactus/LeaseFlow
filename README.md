@@ -30,15 +30,21 @@ Destiné principalement aux agents immobiliers.
 
 ## Installation
 
-git clone https://github.com/ton-utilisateur/leaseflow.git
+1. Cloner le dépôt : ``` git clone https://github.com/Millecactus/LeaseFlow.git ```
 
-cd leaseflow
 
-npm install
+2. Se placer dans le dossier du projet :  ``` cd LeaseFlow ```
+
+
+3. Installer les dépendances : ```npm install ```
+
+
+4. Installer Angular CLI (si besoin) : ``` npm install -g @angular/cli ```
+
 
 ## Lancement de l'application
 
-ng serve
+``` ng serve ```
 
 Accéder ensuite à [http://localhost:4200](http://localhost:4200).
 
