@@ -1,0 +1,33 @@
+<div id="listing">
+  <div id="inside">
+    <header>
+      <div class="center">
+        <div id="title"> {{ listing.title }} </div>
+      </div>
+    </header>
+    <figure id="gallery">
+      @for (photo of listing.photos; track photo) {
+        <img [src]="'images/' + photo" [alt]=photo />
+      }
+    </figure>
+    <div class="listing-details">
+      <div id ="description">
+        <div class="main">
+          <div class="type">{{listing.transaction}}</div>
+        </div>
+      </div>
+      <div class="adress">
+        <div class="city">{{listing.city}}</div>
+        <div class="postal">{{listing.postal}}</div>
+      </div>
+      <div class="available">
+        Offre ajouté le : {{listing.availableFrom}}
+      </div>
+      <div class="surface"> {{listing.surface}} m²</div>
+      <div class="price">{{listing.price}} euros</div>
+      <div class="description">
+        {{listing.description}}
+      </div>
+    </div>
+  </div>
+</div>

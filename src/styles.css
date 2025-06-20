@@ -1,0 +1,30 @@
+:root {
+  --primary: rgb(225, 75, 75);
+  --secondary: #f6f7fb;
+  --accent: #e8eaf6;
+  --text: #222;
+  --muted: #6c757d;
+  --white: #fff;
+}
+
+body, html{
+  font-family: "sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  background: linear-gradient(
+  545deg,
+  rgb(237, 239, 248),
+  rgb(255,251,243)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Funnel Sans', Arial, sans-serif;
+}
+
+
+
+

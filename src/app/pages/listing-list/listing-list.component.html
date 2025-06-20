@@ -1,0 +1,18 @@
+<app-filter (filterChanged)="onFilterChanged($event)"></app-filter>
+<app-sorting [listing]="listings" (sortingByPriceAsc)="onSorted($event)"  (sortingByPriceDesc)="onSorted($event)"
+             (sortingByDateAsc)="onSorted($event)" (sortingByDateDesc)="onSorted($event)" />
+<div id="listing-list">
+  @for (listing of filteredListings; track listing.id){
+    <div class="card">
+     <a [routerLink]="['/listing', listing.id]">
+       <app-listing-card [listing]="listing" />
+     </a>
+    </div>
+  }
+
+  @if (filteredListings.length === 0){
+    <p>Aucun résultat ne correspond a votre recherche </p>
+  }
+</div>
+
+

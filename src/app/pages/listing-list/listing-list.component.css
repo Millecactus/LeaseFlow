@@ -1,0 +1,18 @@
+#listing-list{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.card{
+  background-color: #f4f4f4;
+  padding: 15px;
+}

@@ -1,0 +1,44 @@
+@if (listingId()){
+  <div>
+    <header>
+      <div class="center">
+        <h1>{{ listing()?.title }}</h1>
+      </div>
+    </header>
+    <div class="gallery">
+      @for (photo of listing()?.sidephotos; track photo){
+        <img src="images/{{photo}}">
+      }
+    </div>
+    <div class="listing-details">
+      <p>{{ listing()?.transaction }}</p>
+      <p>{{ listing()?.type }}</p>
+      <div class="parking">
+        <span>{{ listing()?.postal }}</span>
+        <span>{{ listing()?.address }} </span>
+      </div>
+      <p>Surface : {{ listing()?.surface }} m2</p>
+      <p>{{ listing()?.description }}</p>
+      <p>Pieces : {{ listing()?.rooms }}</p>
+      <p>Etages : {{ listing()?.floor }}</p>
+      <div class="parking">
+        <span>parking :</span>
+        <span>
+          @if (listing()?.parking) {
+            oui
+          } @else {
+            non
+          }
+        </span>
+      </div>
+
+
+      <p>Durée de location : {{ listing()?.leaseDuration }}</p>
+      <p>Certifications : {{ listing()?.certifications }}</p>
+      <p>Date d'ajout : {{ listing()?.availableFrom }}</p>
+      <p>Regime fiscal : {{ listing()?.fiscalRegime }}</p>
+    </div>
+  </div>
+} @else {
+  <p> listings works !</p>
+}
